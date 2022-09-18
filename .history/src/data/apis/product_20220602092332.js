@@ -1,0 +1,1 @@
+exconst getHtmlForProduct = ()
