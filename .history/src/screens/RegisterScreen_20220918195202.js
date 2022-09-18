@@ -55,12 +55,12 @@ export const RegisterScreen = ({navigation, route}) => {
     // const [result, message] = await register(fullName, email, city, password);
     setIsLoading(false);
     // if (message) {
-    // setTimeout(() => {
-    //   showErrorToast(message);
-    // }, 300);
-    // } else {
-    navigation.navigate(AppNavigationNames.About);
-    // }
+      setTimeout(() => {
+        showErrorToast(message);
+      }, 300);
+    } else {
+      navigation.navigate(AppNavigationNames.About);
+    }
   };
 
   return (

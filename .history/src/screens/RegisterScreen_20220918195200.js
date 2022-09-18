@@ -54,13 +54,13 @@ export const RegisterScreen = ({navigation, route}) => {
     setIsLoading(true);
     // const [result, message] = await register(fullName, email, city, password);
     setIsLoading(false);
-    // if (message) {
-    // setTimeout(() => {
-    //   showErrorToast(message);
-    // }, 300);
-    // } else {
-    navigation.navigate(AppNavigationNames.About);
-    // }
+    if (message) {
+      setTimeout(() => {
+        showErrorToast(message);
+      }, 300);
+    } else {
+      navigation.navigate(AppNavigationNames.About);
+    }
   };
 
   return (

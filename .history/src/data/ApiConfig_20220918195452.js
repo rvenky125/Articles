@@ -15,7 +15,7 @@ export const noInternetMsg =
 // };
 
 export const instance = axios.create({
-  // baseURL: base_url,
+  baseURL: base_url,
   headers: {'Content-Type': 'application/json', accept: 'application/json'},
 });
 
